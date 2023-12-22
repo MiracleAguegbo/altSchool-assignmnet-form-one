@@ -17,7 +17,7 @@ body {
 }
 
 .main-con-left {
-  margin-top: 190px;
+  margin-top: 170px;
   width: 460px;
   height: 275px;
 }
@@ -199,3 +199,34 @@ button {
 
 }
 
+@media screen and (max-width: 720px) {
+  .main-container {
+    justify-content: space-between;
+    margin: 5% 80px;
+    display: inline-block;
+    height: auto;
+}
+
+.main-con-left {
+  margin: 0;
+  width: 580px;
+  height: 275px;
+}
+
+.main-con-right {
+  width: 580px;
+  height: 650px;
+  border-radius: 6px;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+
+.main-con-right-down p {
+  font-size: 14px;
+  text-align: center;
+  padding: 100px 0;
+  font-weight: 400;
+  line-height: 25px;
+}
+}
