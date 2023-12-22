@@ -11,13 +11,13 @@ body {
 
 .main-container {
   justify-content: space-between;
-  margin: 5% 80px;
+  margin: 5% 10rem;
   display: flex;
   height: auto;
 }
 
 .main-con-left {
-  margin-top: 170px;
+  margin-top: 10rem;
   width: 460px;
   height: 275px;
 }
@@ -33,7 +33,7 @@ body {
   color: var(--CL-Black, #000b0a);
   padding-bottom: 20px;
   /* font-family: Brown; */
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
@@ -43,7 +43,7 @@ body {
 .main-con-left p {
   color: var(--CL-Grey, #737373);
   /* font-family: Brown; */
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -93,15 +93,15 @@ select {
 }
 
 .names-right-down {
-    position: relative;
+  position: relative;
   width: 100%;
   padding-bottom: 30px;
 }
 
 .names-right-down img {
-    position: absolute;
-    top: 45px;
-    right: 16px;
+  position: absolute;
+  top: 45px;
+  right: 16px;
 }
 
 .activity-select {
@@ -133,28 +133,29 @@ button {
   line-height: 25px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
   .main-container {
-    margin: 24px;
+    margin: 5% 2rem;
     display: inline-block;
   }
 
   .main-con-left {
-    margin-top: 0;
+    margin: 0px;
+    padding-bottom: 40px;
     width: 327px;
-    height: 180px;
+    height: auto;
   }
 
   .main-con-left img {
-    margin-bottom: 40px;
-    width: 38.667px;
-    height: 40px;
-    margin: 0;
+    margin-bottom: 10px;
+    width: 3rem;
+    height: 3rem;
+    /* margin: 0; */
   }
 
   .main-con-left h1 {
-    font-size: 30px;
-    padding-bottom: 0;
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
 
   .main-con-left p {
@@ -166,24 +167,33 @@ button {
 
   .main-con-left p:last-child {
     display: contents;
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .main-con-right {
     width: 327px;
-    height: 900px;
+    height: auto;
     padding: 24px 16px;
+    /* margin-top: 10rem; */
   }
 
   .main-con-right-up {
     flex-direction: column;
   }
 
+  label {
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+
   .names {
     width: 100%;
     padding-bottom: 24px;
   }
-  
+
   input,
   select {
     width: 100%;
@@ -195,38 +205,9 @@ button {
     padding: 40px 0;
     font-weight: 400;
     line-height: 25px;
-}
+  }
 
-}
-
-@media screen and (max-width: 720px) {
-  .main-container {
-    justify-content: space-between;
-    margin: 5% 80px;
-    display: inline-block;
-    height: auto;
-}
-
-.main-con-left {
-  margin: 0;
-  width: 580px;
-  height: 275px;
-}
-
-.main-con-right {
-  width: 580px;
-  height: 650px;
-  border-radius: 6px;
-  padding: 40px;
-  background: #fff;
-  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
-}
-
-.main-con-right-down p {
-  font-size: 14px;
-  text-align: center;
-  padding: 100px 0;
-  font-weight: 400;
-  line-height: 25px;
-}
+  button {
+    font-size: 1.5rem;
+  }
 }
